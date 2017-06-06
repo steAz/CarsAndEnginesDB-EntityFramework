@@ -1,0 +1,24 @@
+﻿<Window x:Class="siszarp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:siszarp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label Content="Search:" Margin="0,0,453.4,288.8"></Label>
+        <TextBox Name ="textInfo" KeyDown="TextBox_KeyUp" Margin="65,5,360.4,288.8"></TextBox>
+        <Label Content="Column:" Margin="174,0,279.4,288.8"></Label>
+        <ComboBox Name="comboInfo"  Margin="244,5,181.4,288.8">
+            <ComboBoxItem>Model</ComboBoxItem>
+            <ComboBoxItem>Year</ComboBoxItem>
+            <ComboBoxItem>none</ComboBoxItem>
+        </ComboBox>
+        <Button Name="finder" Click="findClicked" Margin="365,5,88.4,288.8">Find</Button>
+        <DataGrid Name="myGrid" RowHeight="30" Margin="0,32,0.4,35.8" MouseDoubleClick="rowDoubleClicked" IsReadOnly="True">
+
+        </DataGrid>
+        <Button Click="addCarClicked" Margin="0,285,0.4,9.8">Add New Car</Button>
+    </Grid>
+</Window>
