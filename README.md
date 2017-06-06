@@ -1,1 +1,1 @@
-# App in WPF which changes structure of files on hard disk
+# App in WPF which represents data base in Entityframework to keep cars and its engines
